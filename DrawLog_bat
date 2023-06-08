@@ -1,0 +1,4 @@
+cd /D "D:\eclipse\CD++Builder Example Workspace\TestCellDevs"
+"D:/DownloadFiles/CD++/CD++Builder_Eclipse3.5.2/eclipse/plugins/cdBuilder.simulator_1.0.0.201010092241/internal/drawlog.exe"  -m"DiamondSquare.ma" -l"DiamondSquare.log" -c"DiamondSquare" -w7 -p2 -0 > DiamondSquare.drw
+rem 
+pause

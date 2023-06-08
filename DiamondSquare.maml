@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CDPlusPlus_Builder_Version_1.0.0>
+  <top>
+    <components> DiamondSquare&#xd;</components>
+  </top>
+  <DiamondSquare>
+    <type> cell&#xd;</type>
+    <dim> (17,17,2)&#xd;</dim>
+    <delay> transport&#xd;</delay>
+    <defaultDelayTime> 100&#xd;</defaultDelayTime>
+    <border> nowrapped &#xd;</border>
+    <neighbors> DiamondSquare(-1,-1,0)  DiamondSquare(-1,0,0) DiamondSquare(-1,1,0) &#xd;</neighbors>
+    <neighbors> DiamondSquare(0,-1,0)  DiamondSquare(0,0,0)  DiamondSquare(0,1,0)&#xd;</neighbors>
+    <neighbors> DiamondSquare(1,-1,0)  DiamondSquare(1,0,0)  DiamondSquare(1,1,0)&#xd;</neighbors>
+    <neighbors> DiamondSquare(0,0,1)&#xd;</neighbors>
+    <initialvalue> 0&#xd;</initialvalue>
+    <initialCellsValue> DiamondSquare.val&#xd;</initialCellsValue>
+    <zone> DiamondSquare-rule { (0,0,0)..(16,16,0) }&#xd;</zone>
+    <zone> second-rule { (0,0,1)..(16,16,1) }&#xd;</zone>
+  </DiamondSquare>
+  <second-rule>
+    <rule> {trunc((0,0,0))+0.1} 200 {fractional((0,0,0)) = 0}&#xd;</rule>
+    <rule> {trunc((0,0,0))+ 1 } 100 {fractional((0,0,0)) = 0.1}&#xd;</rule>
+    <rule> {0} 1000 {t}&#xd;</rule>
+  </second-rule>
+</CDPlusPlus_Builder_Version_1.0.0>
